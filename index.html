@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独立开发者资源集合</title>
+    <style>
+        :root {
+            --primary-color: #10b981;
+            --background-color: #f0fdf4;
+            --card-background: #ffffff;
+            --text-primary: #065f46;
+            --text-secondary: #047857;
+            --accent-color: #059669;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            color: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #ffffff, #ecfdf5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .category {
+            margin-bottom: 3rem;
+        }
+
+        .category h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .article {
+            background: var(--card-background);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+            border: 1px solid #d1fae5;
+        }
+
+        .article:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.1), 0 4px 6px -2px rgba(16, 185, 129, 0.05);
+        }
+
+        .article h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .article a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .article a:hover {
+            color: var(--accent-color);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .tag {
+            background: #d1fae5;
+            color: #065f46;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: #a7f3d0;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .category h2 {
+                font-size: 1.5rem;
+            }
+
+            .article {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>独立开发者资源集合</h1>
+            <p>精选文章助你成长</p>
+        </header>
+
+        <div class="category">
+            <h2>思维方法论</h2>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/1525814845844482" target="_blank">不要轻易称自己为独立开发者</a></h3>
+                <div class="tags">
+                    <span class="tag">观念转变</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/2858151258225521" target="_blank">AI 编程赛道第一课：Build a business，not an App</a></h3>
+                <div class="tags">
+                    <span class="tag">商业思维</span>
+                    <span class="tag">AI</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/4848511545851418" target="_blank">只靠想法就能赚钱的时代到来了！</a></h3>
+                <div class="tags">
+                    <span class="tag">创新思维</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>技术学习</h2>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/5122484888125484" target="_blank">用 AI 自学编程的最好时机到来了</a></h3>
+                <div class="tags">
+                    <span class="tag">AI</span>
+                    <span class="tag">学习方法</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/188545124485142" target="_blank">善用黑科技工具，做十倍速全栈程序员</a></h3>
+                <div class="tags">
+                    <span class="tag">效率工具</span>
+                    <span class="tag">全栈开发</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>产品开发</h2>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/811452228445512" target="_blank">什么产品好做？三个一</a></h3>
+                <div class="tags">
+                    <span class="tag">产品定位</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/814822455488822" target="_blank">写给独立开发者：如何快速做出产品 MVP</a></h3>
+                <div class="tags">
+                    <span class="tag">MVP</span>
+                    <span class="tag">快速开发</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/212485241245121" target="_blank">如何获得产品 idea</a></h3>
+                <div class="tags">
+                    <span class="tag">创意发想</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/415414825512158" target="_blank">完美的创业项目，是怎么被想出来的？</a></h3>
+                <div class="tags">
+                    <span class="tag">项目规划</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/1842142555228212" target="_blank">判断项目行不行的极简方法</a></h3>
+                <div class="tags">
+                    <span class="tag">项目评估</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>增长与运营</h2>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/218514241454241" target="_blank">2021 年 Google SEO 最关键有效的技巧' 站内</a></h3>
+                <div class="tags">
+                    <span class="tag">SEO</span>
+                    <span class="tag">流量获取</span>
+                </div>
+            </div>
+            <div class="article">
+                <h3><a href="https://scys.com/articleDetail/xq_topic/18288851425182" target="_blank">0 资源，做出 3 个日 UV 过十万、7 - 8 个日 UV 过万的网站，分享我获得无限网站流量的秘籍</a></h3>
+                <div class="tags">
+                    <span class="tag">增长实战</span>
+                    <span class="tag">流量获取</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
